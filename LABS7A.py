@@ -1,7 +1,8 @@
 import random
 
 print("Hello! Welcome to the Rock Paper Scissors Program!")
-
+count_q=0
+count_p=0
 champ= False
 
 while champ == False:
@@ -15,6 +16,8 @@ while champ == False:
 
     if (PLAYER == 1) and (ComputerInput == 1):
         champ= False
+        PLAYER=win & ComputerInput=lose
+        count_q=count_q+0
         print("It's a draw; you both played Rock!")
         
     if (PLAYER == 2) and (ComputerInput == 1):
